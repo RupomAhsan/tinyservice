@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: tinyservice-pod
+  labels:
+    name: tinyservice
+spec:
+  containers:
+  - name: tinyservice
+    image: tinyservice
+    imagePullPolicy: Never
+    ports:
+    - containerPort: 3000

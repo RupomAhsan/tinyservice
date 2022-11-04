@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+ name: tinyservice-dpl
+spec:
+ replicas: 3
+ selector:
+  matchLabels:
+    name: tinyservice
+ template:
+   metadata:
+     labels:
+       name: tinyservice
+   spec:
+     containers:
+     - name: tinyservice
+       image: tinyservice
+       imagePullPolicy: Never
+       ports:
+       - containerPort: 3000

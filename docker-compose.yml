@@ -1,0 +1,25 @@
+version: "3.7"
+
+services:
+  tinyservice:
+    build: .
+    container_name: tinyservice
+    ports:
+      - 3000:3000
+    environment:
+      - 'TINY_MESSAGE=tinyservice [compose]'
+    networks:
+      - tinyservice
+
+  another-tinyservice:
+    build: .
+    container_name: another-tinyservice
+    environment:
+      - 'TINY_MESSAGE=Another tinyservice [compose]'
+    networks:
+      - tinyservice
+
+  
+networks:
+  nanoservice:
+    name: tinyservice-network
