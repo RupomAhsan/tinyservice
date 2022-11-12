@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: tinyservice-clusterip
+  name: tinyservice-loadbalancer
 spec:
-  type: ClusterIP
+  type: LoadBalancer
   selector: 
     app: tinyservice
   ports:
-  - protocol: TCP
+  - name: "3005"
     port: 3005
     targetPort: 3000

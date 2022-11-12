@@ -3,16 +3,16 @@ kind: Deployment
 metadata:
  name: tinyservice-dpl
  labels:
-  app: my-tinyservice
+  app: tinyservice
 spec:
  replicas: 2
  selector:
   matchLabels:
-    app: my-tinyservice
+    app: tinyservice
  template:
    metadata:
      labels:
-       app: my-tinyservice
+       app: tinyservice
    spec:
      containers:
      - name: tinyservice
@@ -27,7 +27,7 @@ spec:
          initialDelaySeconds: 15
          timeoutSeconds: 2
          periodSeconds: 5
-         failureThreshold: 1       
+         failureThreshold: 1     
        resources:
          limits:
            memory: "128Mi" #128 MB

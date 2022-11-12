@@ -19,3 +19,6 @@ C:\Users\rupom\kubernetes_demo\TinyServices\src\TinyService\obj\Debug\net6.0\ref
 C:\Users\rupom\kubernetes_demo\TinyServices\src\TinyService\obj\Debug\net6.0\TinyService.pdb
 C:\Users\rupom\kubernetes_demo\TinyServices\src\TinyService\obj\Debug\net6.0\TinyService.genruntimeconfig.cache
 C:\Users\rupom\kubernetes_demo\TinyServices\src\TinyService\obj\Debug\net6.0\ref\TinyService.dll
+C:\Users\rupom\kubernetes_demo\TinyServices\src\TinyService\bin\Debug\net6.0\appsettings.docker.json
+C:\Users\rupom\kubernetes_demo\TinyServices\src\TinyService\bin\Debug\net6.0\appsettings.kubernetes.json
+C:\Users\rupom\kubernetes_demo\TinyServices\src\TinyService\bin\Debug\net6.0\appsettings.production.json

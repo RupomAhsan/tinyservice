@@ -1,0 +1,15 @@
+apiVersion: apps/v1
+kind: Service
+metadata:
+ name: tinyservice-svc
+ ...
+
+
+apiVersion: apps/v1
+kind: Service
+metadata:
+ name: otherservice-svc
+ ...
+
+
+ 
