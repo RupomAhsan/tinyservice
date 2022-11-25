@@ -88,3 +88,8 @@ kubectl describe pod [pod-name]
 
 # Get Pod YAML
 kubectl get pod [pod-name] -o yaml
+// ! Who are you?
+
+
+
+// todo Lets work on this

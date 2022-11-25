@@ -9,5 +9,7 @@
         public int HealthCheckDelay { get; set; }
         public int ReadinessCheckDelay { get; set; }
         public bool LogRequestHeaders { get; set; }
+        public string ConfigMapFile { get; set; }
+        
     }
 }

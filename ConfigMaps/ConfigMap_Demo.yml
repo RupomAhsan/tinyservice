@@ -1,0 +1,61 @@
+apiVersion: apps/v1
+kind: ConfigMap
+metadata:
+ name: app-settings
+ labels:
+   app: app-settings
+data:
+  enemies: aliens
+  lives: "3"
+  enemies.cheat: "true"
+  enemies.cheat.level: "noGoodRotten"
+
+
+ # Create from a ConfigMap manifest
+ Kubectl create -f file.configmap.yml --save-config
+
+ ...
+
+  enemies: aliens
+  lives: "3"
+  enemies.cheat: "true"
+  enemies.cheat.level: "noGoodRotten"
+
+ # Create a ConfigMap using data from a file
+ Kubectl create configmap [cm-name] --from-env-file=[path-to-file] --save-config
+
+  apiVersion: v1
+  kind: ConfigMap
+  data:
+    game.config: 
+      enemies: aliens
+      lives: "3"
+      enemies.cheat: "true"
+      enemies.cheat.level: "noGoodRotten"
+
+
+
+
+
+apiVersion: apps/v1
+kind: ConfigMap
+metadata:
+ name: app-settings
+ labels:
+   app: app-settings
+data:
+  enemies: aliens
+  lives: "3"
+  enemies.cheat: "true"
+  enemies.cheat.level: "noGoodRotten"
+
+
+
+apiVersion: apps/v1
+kind: Service
+metadata:
+ name: otherservice-svc
+ ...
+
+
+ 
